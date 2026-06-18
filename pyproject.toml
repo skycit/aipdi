@@ -9,7 +9,7 @@ description = "Reference implementation of the AI-Provider Dependency Index (AIP
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "The AIPDI authors" }]
+authors = [{ name = "Mohammadamin Keshtkar", email = "mohammad@prizelyapp.com" }]
 dependencies = ["numpy>=1.21"]
 
 [project.optional-dependencies]

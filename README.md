@@ -1,4 +1,4 @@
-# AIPDI — AI-Provider Dependency Index (reference implementation)
+# AIPDI - AI-Provider Dependency Index (reference implementation)
 
 Companion code and data for:
 
@@ -6,7 +6,7 @@ Companion code and data for:
 > Downstream Reliance on Foundation-Model Providers.** *IEEE Transactions on
 > Reliability* (under review).
 
-The AIPDI is a transparent 0–100 composite that measures how dependent a
+The AIPDI is a transparent 0-100 composite that measures how dependent a
 downstream AI product is on its foundation-model providers, treated as a
 reliability exposure. It combines a **technical / operational** sub-index *T*
 (single-provider concentration, abstraction, prompt and fine-tuning
@@ -24,14 +24,14 @@ in the study (`data/catalogue.csv`).
 ## Install
 
 ```bash
-git clone https://github.com/[author]/aipdi.git
+git clone https://github.com/skycit/aipdi.git
 cd aipdi
 pip install -e .            # or: pip install numpy
 # optional, for variance-based Sobol' sensitivity:
 pip install SALib
 ```
 
-Python ≥ 3.9. The core depends only on **numpy**; **SALib** is optional and
+Python >= 3.9. The core depends only on **numpy**; **SALib** is optional and
 used solely by `sobol_sensitivity`.
 
 ## Quick start
@@ -64,16 +64,16 @@ python -m pytest -q            # or: python tests/test_scoring.py
 
 | Function | Equation | Meaning |
 |---|---|---|
-| `normalize(x, xmin, xmax)` | (1) | min–max scaling to [0, 1] |
-| `technical_subindex(scores)` | (2) | T = 50·Σ wᵢ nᵢ |
-| `commercial_subindex(scores)` | (3) | C = 50·Σ wⱼ nⱼ |
+| `normalize(x, xmin, xmax)` | (1) | min-max scaling to [0, 1] |
+| `technical_subindex(scores)` | (2) | T = 50 * sum_i w_i n_i |
+| `commercial_subindex(scores)` | (3) | C = 50 * sum_j w_j n_j |
 | `aipdi(scores)` | (4) | AIPDI = T + C, fully compensatory |
 | `single_supplier_share(shares)`, `hhi(shares)` | (5) | concentration measures |
 | `availability_series(a)` | (6) | single provider = single point of failure |
 | `availability_parallel(a)`, `unavailability_parallel(a)` | (7) | multi-provider redundancy |
-| `survivability(scores)` | (8) | R = Π(1−nᵢ)^wᵢ, weakest-link |
+| `survivability(scores)` | (8) | R = prod_i (1 - n_i)^w_i, weakest-link |
 | `aipdi_geometric(scores)` | (9) | partially non-compensatory composite |
-| `expected_loss(p, impact)` | (10) | L = Σ pₖ Iₖ, business-continuity estimate |
+| `expected_loss(p, impact)` | (10) | L = sum_k p_k I_k, business-continuity estimate |
 
 All scores are bounded to [0, 100] (sub-indices to [0, 50]); `survivability`
 returns [0, 1].
@@ -85,23 +85,23 @@ The default weights (`aipdi.DEFAULT_WEIGHTS`, mirrored in
 baseline. They are not the only option: `aipdi.weighting` provides the standard
 alternatives so conclusions need not depend on one scheme.
 
-- `equal_weights(...)` — equal weighting.
-- `entropy_weights(score_matrix, indicators)` — data-driven Shannon-entropy
+- `equal_weights(...)`: equal weighting.
+- `entropy_weights(score_matrix, indicators)`: data-driven Shannon-entropy
   weights (objective).
-- `ahp_weights(pairwise, indicators)` + `consistency_ratio(pairwise)` —
+- `ahp_weights(pairwise, indicators)` + `consistency_ratio(pairwise)`:
   analytic-hierarchy process from elicited pairwise judgments (Saaty); check
   CR < 0.10.
-- `budget_allocation(points)` — budget-allocation process.
+- `budget_allocation(points)`: budget-allocation process.
 
 Pass any returned dict as the `weights=` argument to the scoring functions.
 
 ## Sensitivity (Section IV-C)
 
-- `dirichlet_uncertainty(scores)` — Monte-Carlo spread of an entity's AIPDI when
+- `dirichlet_uncertainty(scores)`: Monte-Carlo spread of an entity's AIPDI when
   the weights are sampled on the simplex around the defaults (numpy only).
-- `oat_elasticity(scores)` — one-at-a-time ±50% weight perturbation, ranked by
+- `oat_elasticity(scores)`: one-at-a-time +/-50% weight perturbation, ranked by
   swing (numpy only).
-- `sobol_sensitivity(scores)` — first-order (S1) and total-effect (ST) Sobol'
+- `sobol_sensitivity(scores)`: first-order (S1) and total-effect (ST) Sobol'
   indices over the weights (requires SALib), following Saisana, Saltelli &
   Tarantola (2005).
 
@@ -130,5 +130,5 @@ call `aipdi(...)`.
 
 ## License
 
-MIT — see `LICENSE`. If you use this code or the catalogue, please cite the
+MIT - see `LICENSE`. If you use this code or the catalogue, please cite the
 paper (see `CITATION.cff`).
