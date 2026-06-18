@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "AIPDI: A Reference Implementation of the AI-Provider Dependency Index"
+version: 0.1.0
+date-released: 2026-06-09
+license: MIT
+authors:
+  - family-names: "[Author One]"
+  - family-names: "[Author Two]"
+  - family-names: "[Author Three]"
+preferred-citation:
+  type: article
+  title: "AI-Dependent or AI-Enabled? A Reliability-Oriented Index for Measuring Downstream Reliance on Foundation-Model Providers"
+  journal: "IEEE Transactions on Reliability (under review)"
+  year: 2026
+  authors:
+    - family-names: "[Author One]"
+    - family-names: "[Author Two]"
+    - family-names: "[Author Three]"

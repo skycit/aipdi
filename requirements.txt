@@ -1,0 +1,3 @@
+numpy>=1.21
+# optional, for variance-based Sobol' sensitivity (aipdi.sobol_sensitivity):
+# SALib>=1.4

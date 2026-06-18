@@ -1,0 +1,13 @@
+block,indicator,weight
+technical,single_provider_concentration,0.22
+technical,no_abstraction_layer,0.12
+technical,prompt_tool_nonportability,0.14
+technical,finetuning_lockin,0.12
+technical,data_embeddings_lockin,0.16
+technical,no_open_weight_fallback,0.12
+technical,sla_criticality,0.12
+commercial,ai_share_of_value,0.28
+commercial,weak_moat,0.24
+commercial,margin_exposure,0.18
+commercial,sherlocking_exposure,0.20
+commercial,contractual_lockin,0.10
