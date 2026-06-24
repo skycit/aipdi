@@ -1,6 +1,6 @@
 """Loader for the named-entity catalogue and the indicative-band rule.
 
-The catalogue (data/catalogue.csv) lists all 398 entities used in the paper,
+The catalogue (aipdi/data/catalogue.csv) lists all 398 entities used in the paper,
 each coded by segment, vertical and role, disclosed model posture, and source.
 `indicative_band` reproduces the deterministic segment x posture rule used for
 the "Indic. AIPDI" column of Table V. It is a coarse locator on the 0-100
@@ -16,7 +16,23 @@ from typing import Dict, List
 
 __all__ = ["DATA_DIR", "load_catalogue", "indicative_band", "BAND_MAP"]
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+
+# Data ships inside the package (aipdi/data) so it is present for every install
+# (editable, wheel, or PyPI). The legacy top-level "data/" dir is kept as a
+# fallback for older checkouts.
+DATA_DIR = os.path.join(_HERE, "data")
+_LEGACY_DATA_DIR = os.path.join(os.path.dirname(_HERE), "data")
+
+
+def _resolve_data(filename: str) -> str:
+    """Return the first existing path for `filename` across known data dirs."""
+    for base in (DATA_DIR, _LEGACY_DATA_DIR):
+        candidate = os.path.join(base, filename)
+        if os.path.exists(candidate):
+            return candidate
+    # Fall back to the packaged location for a clear error message.
+    return os.path.join(DATA_DIR, filename)
 
 # Segment x posture -> indicative AIPDI band (mirrors aipdiBand in the paper).
 BAND_MAP: Dict[str, Dict[str, int]] = {
@@ -38,7 +54,7 @@ def indicative_band(segment: str, posture: str, default: int = 50) -> int:
 
 def load_catalogue(path: str | None = None) -> List[Dict[str, str]]:
     """Load data/catalogue.csv as a list of dict rows, adding `indic_aipdi`."""
-    path = path or os.path.join(DATA_DIR, "catalogue.csv")
+    path = path or _resolve_data("catalogue.csv")
     rows: List[Dict[str, str]] = []
     with open(path, newline="", encoding="utf-8") as fh:
         for r in csv.DictReader(fh):

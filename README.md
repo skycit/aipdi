@@ -17,7 +17,7 @@ moat, margin exposure, platform/Sherlocking risk, contractual lock-in).
 This repository **reproduces every score, figure, and sensitivity result in the
 paper** and lets you re-score the index under alternative weighting and
 aggregation choices. It also ships the full **398-entity named catalogue** used
-in the study (`data/catalogue.csv`).
+in the study (`aipdi/data/catalogue.csv`).
 
 ---
 
@@ -26,10 +26,15 @@ in the study (`data/catalogue.csv`).
 ```bash
 git clone https://github.com/skycit/aipdi.git
 cd aipdi
-pip install -e .            # or: pip install numpy
+pip install -e .                  # installs the package and numpy
 # optional, for variance-based Sobol' sensitivity:
 pip install SALib
 ```
+
+Installing the package (the `pip install -e .` above) is what puts `aipdi` on
+the import path; the examples and tests below assume it. If you would rather not
+install, run everything from the repo root with `PYTHONPATH=.` prefixed (for
+example, `PYTHONPATH=. python examples/example_scoring.py`).
 
 Python >= 3.9. The core depends only on **numpy**; **SALib** is optional and
 used solely by `sobol_sensitivity`.
@@ -57,7 +62,10 @@ Run the worked examples:
 ```bash
 python examples/example_scoring.py
 python examples/example_sensitivity.py
-python -m pytest -q            # or: python tests/test_scoring.py
+
+# tests: either install pytest via the extra, or run the dependency-free runner
+pip install -e ".[test]" && python -m pytest -q
+python tests/test_scoring.py   # no pytest needed
 ```
 
 ## What maps to what (Section III-F)
@@ -81,7 +89,7 @@ returns [0, 1].
 ## Weighting (Section IV-C)
 
 The default weights (`aipdi.DEFAULT_WEIGHTS`, mirrored in
-`data/weights_default.csv`) are **author-proposed** and act as a transparent
+`aipdi/data/weights_default.csv`) are **author-proposed** and act as a transparent
 baseline. They are not the only option: `aipdi.weighting` provides the standard
 alternatives so conclusions need not depend on one scheme.
 
@@ -107,7 +115,7 @@ Pass any returned dict as the `weights=` argument to the scoring functions.
 
 ## Catalogue and indicative bands
 
-`data/catalogue.csv` holds all 398 entities (segment, vertical and role,
+`aipdi/data/catalogue.csv` holds all 398 entities (segment, vertical and role,
 disclosed posture S/M/O, segment-typical coding flag, source).
 `load_catalogue()` returns the rows and attaches the deterministic
 `indicative_band(segment, posture)` value used for the "Indic. AIPDI" column of
