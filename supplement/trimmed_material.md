@@ -64,4 +64,29 @@ repository pointer):
 > The Appendix lists the full catalogue (all 398 entities) with posture, an
 > indicative dependency score and sources.
 
+## 2026-07-04: References [65]-[68] removed from the submission copy
+
+These four references were cited only by rows of the full Table V. After
+the table became an 18-row excerpt they were no longer cited anywhere in
+the submission manuscript, and IEEE flags uncited references. They are the
+last four entries of the reference list, so their removal shifts no other
+reference numbers. They remain in the 38-page preprint and in the
+`paper_ref` column of
+[table_V_full_catalogue.csv](table_V_full_catalogue.csv).
+
+> [65] TrueFoundry, "LiteLLM vs. OpenRouter: choosing an LLM gateway,"
+> 2025. [Online]. Available:
+> https://www.truefoundry.com/blog/litellm-vs-openrouter
+>
+> [66] OpenAI, "Introducing OpenAI Frontier," 2026. [Online]. Available:
+> https://openai.com/index/introducing-openai-frontier/
+>
+> [67] Y Combinator, "Startup directory (companies tagged artificial
+> intelligence)," 2026. [Online]. Available:
+> https://www.ycombinator.com/companies
+>
+> [68] Forbes, "AI 50 2025 (in partnership with Sequoia Capital and
+> Meritech Capital)," 2025. [Online]. Available:
+> https://www.forbes.com/lists/ai50/
+
 <!-- Subsequent trims are appended below, newest last. -->
