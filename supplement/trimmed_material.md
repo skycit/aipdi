@@ -49,4 +49,19 @@ Code and data availability, last sentence (original):
 > Interested readers may also obtain the coding sheet from the
 > corresponding author.
 
+## 2026-07-04: Table V excerpt moved from the Appendix into Section IV-B
+
+Per the IEEE T-Rel author guidelines ("all figures and tables embedded in
+the paper, rather than listed at the end or in the appendix"), the 18-row
+Table V excerpt and its caption were moved from the Appendix into Section
+IV-B (Sample construction) of the submission copy. The Appendix remains as
+a text-only section holding the coding conventions and the repository
+pointer. Nothing was removed in this move.
+
+Section IV-B, last sentence (original, replaced by a Table V callout with a
+repository pointer):
+
+> The Appendix lists the full catalogue (all 398 entities) with posture, an
+> indicative dependency score and sources.
+
 <!-- Subsequent trims are appended below, newest last. -->
