@@ -123,6 +123,20 @@ Table V. **These bands are coarse locators, not firm-level measurements**
 (Sections IV-C, VIII); for an actual score, collect the indicator evidence and
 call `aipdi(...)`.
 
+## Paper supplementary material
+
+The `supplement/` folder holds citable supplementary material relocated from
+the submission manuscript to meet the journal's 15-page limit:
+
+- [`supplement/table_V_full_catalogue.csv`](supplement/table_V_full_catalogue.csv)
+  and [`supplement/table_V_full_catalogue.md`](supplement/table_V_full_catalogue.md):
+  the paper's full Table V, all 398 catalogue entries WITH the computed
+  Indic. AIPDI column, the segment-typical (dagger) flag, the paper's caption
+  and posture-code legend, and each source's reference number in the paper.
+- [`supplement/trimmed_material.md`](supplement/trimmed_material.md): passages
+  and table rows condensed or removed from the submission copy, preserved
+  verbatim with their original location in the paper.
+
 ## Methodological references
 
 - OECD & EC-JRC, *Handbook on Constructing Composite Indicators* (2008).

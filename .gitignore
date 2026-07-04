@@ -1,3 +1,7 @@
+# Local session guidance / settings (never commit)
+CLAUDE.md
+.claude/
+
 # Python
 __pycache__/
 *.py[cod]
