@@ -24,4 +24,29 @@ repository. The complete table, with the paper's caption and legend, is
 preserved in [table_V_full_catalogue.md](table_V_full_catalogue.md) and
 [table_V_full_catalogue.csv](table_V_full_catalogue.csv).
 
+## 2026-07-04: Appendix wording replaced when Table V became an excerpt
+
+The following original sentences were replaced in the submission copy when
+the full table was swapped for an 18-row excerpt. The full caption and
+legend are preserved in [table_V_full_catalogue.md](table_V_full_catalogue.md).
+
+Appendix heading (original):
+
+> Appendix. Named-entity catalogue (full sample, N = 398)
+
+Appendix intro, first sentence (original):
+
+> Table V lists all 398 entities in the named-entity catalogue, each coded
+> by segment, vertical and role and disclosed model posture, with an
+> indicative dependency score and a source.
+
+Table V caption, last sentence (original):
+
+> The full coding sheet is available from the corresponding author.
+
+Code and data availability, last sentence (original):
+
+> Interested readers may also obtain the coding sheet from the
+> corresponding author.
+
 <!-- Subsequent trims are appended below, newest last. -->
