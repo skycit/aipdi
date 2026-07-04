@@ -1,0 +1,5 @@
+provider,share_spend_pct,share_usage_pct,note
+Anthropic (Claude),40,32,
+OpenAI (GPT),27,25,
+Google (Gemini),21,20,
+Others (Llama and Mistral and smaller),12,,residual fragmented across many smaller providers so true concentration is understated

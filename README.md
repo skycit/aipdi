@@ -136,6 +136,13 @@ the submission manuscript to meet the journal's 15-page limit:
 - [`supplement/trimmed_material.md`](supplement/trimmed_material.md): passages
   and table rows condensed or removed from the submission copy, preserved
   verbatim with their original location in the paper.
+- [`supplement/figures/`](supplement/figures/): full-color originals of the
+  paper's Figs. 1-8 (IEEE prints in grayscale) with their captions
+  ([`figures.md`](supplement/figures/figures.md)) and machine-readable CSVs
+  of the underlying figure data. The provider-share CSV reproduces the
+  paper's headline HHI (about 2,914) and top-3 share (about 88 percent) via
+  `aipdi.scoring.hhi` and `aipdi.scoring.single_supplier_share`; the sample
+  composition CSV is derived exactly from the packaged catalogue.
 
 ## Methodological references
 

@@ -1,0 +1,13 @@
+segment,posture,count
+AI-native,S,2
+AI-native,M,170
+AI-native,O,29
+Incumbent,S,5
+Incumbent,M,44
+Incumbent,O,3
+Infrastructure,S,0
+Infrastructure,M,107
+Infrastructure,O,14
+Provider,S,0
+Provider,M,0
+Provider,O,24

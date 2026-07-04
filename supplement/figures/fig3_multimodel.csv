@@ -1,0 +1,4 @@
+metric,prior_survey_2024_pct,latest_survey_2025_pct,source
+enterprises with >=3 model families in production,68,81,"a16z (2025), n=100 CIOs"
+enterprises with >=5 models in production,29,37,"a16z (2025), n=100 CIOs"
+open-weight share of AI workloads,19,13,"a16z analysis, cited in Typedef (2025)"
