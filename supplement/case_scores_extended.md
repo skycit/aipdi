@@ -1,10 +1,10 @@
-# Extended public-evidence case scores: ten further catalogue firms
+# Extended public-evidence case scores: thirteen further catalogue firms
 
 Supplementary material for the paper "AI-Dependent or AI-Enabled? A
 Reliability-Oriented Index for Measuring Downstream Reliance on
 Foundation-Model Providers" (IEEE Transactions on Reliability, under
 review). Extends [case_scores.md](case_scores.md) (Jasper, Windsurf,
-Harvey, Cursor) with compact coding sheets for ten further catalogue firms
+Harvey, Cursor) with compact coding sheets for thirteen further catalogue firms
 whose provider architecture is sufficiently disclosed in public sources.
 
 Method and provenance: evidence dossiers were compiled with LLM-assisted
@@ -31,19 +31,22 @@ weight uncertainty (concentration 60).
 | Writer | O | 9.5 | 26.2 | 35.7 | 33-39 | Own closed Palmyra models, customer fine-tunes on own infra, VPC deployment |
 | Suno | O | 7.6 | 29.2 | 36.8 | 34-40 | Own music foundation models (plus earlier OSS Bark); provider risk minimal, legal risk separate |
 | Character.AI | O | 8.3 | 35.3 | 43.6 | 42-46 | Own models, but documented serving-cost crisis and the Google licensing acquihire (founders departed) load the commercial axis |
+| Gamma | M | 19.6 | 30.8 | 50.4 | 47-53 | 20+ models across Anthropic, OpenAI, Google, and image providers; profitable at $100M ARR; no provider equity or committed-spend disclosed |
+| Legora | M | 25.2 | 31.9 | 57.2 | 54-60 | Built "mostly on Claude" (TechCrunch) plus Azure-hosted OpenAI and Meta models (Forbes); its primary provider entered its vertical with legal plugins in Feb 2026 |
+| Decagon | M | 16.3 | 29.5 | 45.8 | 43-48 | Firm-disclosed: over 80 percent of model traffic on in-house-trained models since March 2026, external providers for the remainder and evaluation |
 
 ## Two findings
 
 1. Empirical validation of the Table V rule bands. Across all
    evidence-scored current configurations (including Cursor, Windsurf, and
    post-move Harvey from the flagship set): multi-model AI-natives average
-   53.8 against a band value of 55; own-model firms average 38.7 against
+   53.0 (n = 11) against a band value of 55; own-model firms average 38.7 against
    45; the two disclosed single-provider products average 65.3 against 90.
    The rule bands are directionally correct locators, near-exact for the M
    posture, slightly conservative for O, and overstated only in the S
    corner, where the band is calibrated to the undisclosed thin-wrapper
    worst case while every disclosed S firm shows partial mitigations.
-2. The sector's residual dependency is commercial. In 12 of 13 current
+2. The sector's residual dependency is commercial. In 15 of 16 current
    configurations the commercial sub-index exceeds the technical one,
    often by a wide margin (Perplexity 33.6 vs 12.4; Character.AI 35.3 vs
    8.3); the single exception, Khanmigo, is technically tilted by 0.2
@@ -97,9 +100,23 @@ weight uncertainty (concentration 60).
   founder acquihire coded into contractual_lockin (0.65) and margin
   exposure (0.75).
 
-Unscored from the dossier batches, with reasons: Gamma (no evidence
-returned this round), 11x (no provider-side disclosure found),
-Legora (provider identity weakly evidenced, aggregators only), Hebbia,
-Decagon, Glean, Synthesia, Bolt, Replit Agent, Granola (partial evidence;
-scoreable at lower confidence in a future round; Decagon's key claim that
-80 percent of traffic runs in-house is aggregator-only and unverified).
+- Gamma: NYT, TechCrunch, and BusinessWire (Nov 2025) document $100M ARR,
+  profitability, and the $2.1B round; firm marketing discloses "20+ AI
+  models"; teardown confirms API-based access, no own models. Margin coded
+  low (0.4): profitability at scale is disclosed. No entanglements found.
+- Legora: provider identity now top-tier sourced (TechCrunch Mar 2026:
+  built "mostly on Claude"; Forbes May 2025: Azure infrastructure with
+  OpenAI and Meta models). Sherlocking coded 0.85: Anthropic, its primary
+  provider, launched legal plugins in Feb 2026; the CEO publicly stated he
+  is not concerned.
+- Decagon: the 80 percent in-house traffic claim is CONFIRMED by primary
+  source (decagon.ai blog, 2026-03-23, "Introducing Decagon Labs");
+  external models (OpenAI, Anthropic, Google) remain for a minority of
+  traffic and evaluation. Concentration and fallback coded low
+  accordingly.
+
+Unscored from the dossier batches, with reasons: 11x (no provider-side
+disclosure found), Hebbia, Glean, Synthesia, Bolt, Replit Agent, Granola
+(partial evidence; scoreable at lower confidence in a future round). The
+case set is FROZEN at 17 configurations for the submission; further
+scoring feeds the project's benchmark gallery, not the paper.
