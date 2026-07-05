@@ -151,6 +151,12 @@ the submission manuscript to meet the journal's 15-page limit:
   the empirical availability computation behind the paper's Section V-D
   (single-provider vs multi-provider, reproduced with `availability_series`
   and `availability_parallel`).
+- [`supplement/case_scores.md`](supplement/case_scores.md) and
+  [`supplement/case_scores.csv`](supplement/case_scores.csv): indicator-level
+  public-evidence coding sheets and computed AIPDI scores for three named
+  cases (Jasper 2022, Windsurf pre-cutoff 2025, Harvey pre and post its
+  May 2025 multi-model move), with per-indicator sources, weight-uncertainty
+  intervals, and a scoreability comparison against adjacent frameworks.
 - [`supplement/figures/`](supplement/figures/): full-color originals of the
   paper's Figs. 1-8 (IEEE prints in grayscale) with their captions
   ([`figures.md`](supplement/figures/figures.md)) and machine-readable CSVs
