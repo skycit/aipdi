@@ -10,14 +10,26 @@ in the manuscript, plus machine-readable CSVs of the data behind the
 data-bearing figures. IEEE prints in grayscale unless color fees are paid,
 so the color versions live here; the paper points readers to this folder.
 
-Reference numbers in the captions ([4], [10], [42], [46]) are the paper's
-reference list. Quoted captions keep the manuscript's original typography.
+Reference numbers in the captions ([4], [10], [42], [46]) follow the
+38-page preprint's reference list. In the trimmed submission manuscript,
+four related-index references were inserted as [33]-[36], so preprint
+references numbered 33 and above appear there as n+4. Quoted captions keep
+the manuscript's original typography.
+
+Correction (2026-07-05): the preprint's Fig. 3 attributed both multi-model
+statistics to the a16z 2025 CIO survey. Verified against the primary
+sources, the 37% (five or more models, up from 29%) figure is from the
+a16z 2025 CIO survey (n=100, May 2025), while the 81% (three or more model
+families in testing or production, up from 68%) figure is from the a16z
+January 2026 survey of 100 Global 2000 executives. The submission uses the
+corrected, grayscale-safe fig3_multimodel_v2.png; fig3_multimodel.csv
+carries the corrected attribution per row.
 
 | Figure | File | Underlying data |
 |---|---|---|
 | Fig. 1 | [fig1_value_chain.png](fig1_value_chain.png) | conceptual diagram, no dataset |
 | Fig. 2 | [fig2_concentration.png](fig2_concentration.png) | [fig2_concentration.csv](fig2_concentration.csv) |
-| Fig. 3 | [fig3_multimodel.png](fig3_multimodel.png) | [fig3_multimodel.csv](fig3_multimodel.csv) |
+| Fig. 3 | [fig3_multimodel.png](fig3_multimodel.png) (preprint) and [fig3_multimodel_v2.png](fig3_multimodel_v2.png) (submission, corrected and grayscale-safe) | [fig3_multimodel.csv](fig3_multimodel.csv) |
 | Fig. 4 | [fig4_matrix.png](fig4_matrix.png) | author-assigned archetype positions, illustrative only |
 | Fig. 5 | [fig5_aipdi_segments.png](fig5_aipdi_segments.png) | central values listed below |
 | Fig. 6 | [fig6_funding.png](fig6_funding.png) | [fig6_funding.csv](fig6_funding.csv) |

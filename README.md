@@ -136,6 +136,15 @@ the submission manuscript to meet the journal's 15-page limit:
 - [`supplement/trimmed_material.md`](supplement/trimmed_material.md): passages
   and table rows condensed or removed from the submission copy, preserved
   verbatim with their original location in the paper.
+- [`supplement/related_indices_comparison.md`](supplement/related_indices_comparison.md):
+  structured comparison of the AIPDI against adjacent dependency instruments
+  (AIIVI, FMTI, Ecosystem Graphs, CVL, country-level AIDI, provider-health
+  scores, qualitative industry frameworks, psychometric scales, and
+  regulatory regimes).
+- [`supplement/practitioner_guide.md`](supplement/practitioner_guide.md):
+  step-by-step self-assessment guide for startups and SMEs, from the
+  substitution and withdrawal tests to a computed AIPDI score and a
+  prioritized mitigation list.
 - [`supplement/figures/`](supplement/figures/): full-color originals of the
   paper's Figs. 1-8 (IEEE prints in grayscale) with their captions
   ([`figures.md`](supplement/figures/figures.md)) and machine-readable CSVs

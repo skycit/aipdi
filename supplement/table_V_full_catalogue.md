@@ -2,7 +2,7 @@
 
 Supplementary material for the paper "AI-Dependent or AI-Enabled? A Reliability-Oriented Index for Measuring Downstream Reliance on Foundation-Model Providers" (IEEE Transactions on Reliability, under review). This file is the full coding sheet behind the paper's Table V; the submission manuscript carries a short excerpt and points here for the complete table.
 
-Generated from the packaged catalogue via `aipdi.catalogue.load_catalogue()`, which attaches the computed `indic_aipdi` column (the deterministic segment x posture band of `aipdi.catalogue.indicative_band`). Verified cell-by-cell against the manuscript's Table V. A machine-readable copy is in [`table_V_full_catalogue.csv`](table_V_full_catalogue.csv); the `paper_ref` column gives the reference number used in the paper for each source.
+Generated from the packaged catalogue via `aipdi.catalogue.load_catalogue()`, which attaches the computed `indic_aipdi` column (the deterministic segment x posture band of `aipdi.catalogue.indicative_band`). Verified cell-by-cell against the manuscript's Table V. A machine-readable copy is in [`table_V_full_catalogue.csv`](table_V_full_catalogue.csv); the `paper_ref` column gives the reference number used in the paper for each source. Reference numbers follow the 38-page preprint; in the trimmed submission manuscript, four related-index references were inserted as [33]-[36], so preprint references numbered 33 and above appear there as n+4.
 
 ## Caption (as in the paper)
 

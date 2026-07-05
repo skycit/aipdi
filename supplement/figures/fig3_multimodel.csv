@@ -1,4 +1,4 @@
-metric,prior_survey_2024_pct,latest_survey_2025_pct,source
-enterprises with >=3 model families in production,68,81,"a16z (2025), n=100 CIOs"
-enterprises with >=5 models in production,29,37,"a16z (2025), n=100 CIOs"
-open-weight share of AI workloads,19,13,"a16z analysis, cited in Typedef (2025)"
+metric,earlier_wave,earlier_pct,later_wave,later_pct,source
+enterprises with >=3 model families in testing or production,2025,68,2026,81,"a16z, Leaders gainers and unexpected winners in the enterprise AI arms race, Jan 2026, n=100 Global 2000 executives"
+enterprises with >=5 models in production,2024,29,2025,37,"a16z, How 100 enterprise CIOs are building and buying gen AI in 2025, May 2025, n=100 CIOs"
+open-weight share of AI workloads,prior,19,latest,13,"a16z analysis, cited in Typedef, 2025"
