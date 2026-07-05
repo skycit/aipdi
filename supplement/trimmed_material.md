@@ -207,4 +207,47 @@ codes, dagger rule, and the repository pointer; the full legend remains
 verbatim in [table_V_full_catalogue.md](table_V_full_catalogue.md).
 Reference-list font reduced to 8 pt; equation images reduced 12 percent.
 
+## 2026-07-05: 15-page trim, round three (Section III-B, III-C, III-D, III-E tail; IX)
+
+Condensed in the submission copy; preserved verbatim below as they stood
+before this round. Citations resolve via
+[paper_references.md](paper_references.md); all citation numbers remain
+cited in the condensed text.
+
+### Section III-A through III-E as it stood before condensation (verbatim)
+
+> III. Conceptualizing AI-provider dependency
+>
+> A. Definition
+>
+> We define AI-provider dependency as the degree to which a product’s continued delivery of value is contingent on continued access, on current terms, to one or more third-party foundation-model providers. The intuition can be sharpened by two thought experiments. The substitution test asks how much value the product would lose, and at what cost and delay, if it had to switch its primary model to the best available alternative. The withdrawal test (a stress case) asks what remains if the primary provider’s access were revoked outright today. A thin wrapper fails both; a product in which AI is an additive convenience passes both with little degradation. Most products lie between.
+>
+> B. The technical and operational dimension
+>
+> The first dimension concerns how tightly a product is wired, in engineering terms, to a specific provider. Its indicators include: the number of providers in production use and whether a model-abstraction layer insulates business logic from any one of them; the portability of prompts and tool-calling schemas, which rarely transfer cleanly between providers; provider-specific fine-tuning, whose weights are non-portable and whose availability is tied to a base model’s lifecycle [37]; the lock-in created by embeddings, since a corpus vectorized with one provider’s model is not interoperable with another’s vector space without costly re-embedding [38]; reliance on the provider’s availability and service levels; and the existence of a credible open-weight, self-hostable fallback. That switching is genuinely costly is visible in behaviour: Menlo Ventures [5] finds that only about 11% of teams changed model providers in the prior year, with most instead upgrading within their existing vendor.
+>
+> C. The commercial and strategic dimension
+>
+> The second dimension concerns how much of the product’s economic value and defensibility rests on the model. Its indicators include: the share of the product’s value proposition attributable to the AI feature (if “we use a frontier model” is the whole pitch, dependency is near-total); the strength of moats independent of the model, proprietary data, network effects, workflow embedding, brand and switching costs; exposure of margins to provider price changes, given that AI carries real per-token costs rather than the near-zero marginal cost of classical software; platform and Sherlocking exposure, i.e. the probability and impact of the provider entering the product’s category; and contractual or compliance lock-in (data-residency commitments, zero-retention terms, certification dependencies).
+>
+> D. Overlap between the dimensions
+>
+> The two dimensions are correlated but separable, and they interact. An outage (technical) becomes lost revenue and churn (commercial); a provider’s decision to ship a competing feature (commercial platform risk) is enabled by, and may be foreshadowed within, the same API relationship (technical). A product can be technically diversified yet commercially fragile (multi-model, but no moat and easily Sherlocked), or technically locked-in yet commercially robust (deep fine-tuning, but defended by proprietary data and workflow). The most dangerous position is high on both axes simultaneously. Table I lays out the indicators; the overlaps are noted explicitly in the final column.
+>
+> Table I. Indicators of AI-provider dependency along the technical and operational and commercial and strategic dimensions, with explicit overlaps.
+>
+> E. The AI-Provider Dependency Index (AIPDI)
+>
+> We operationalize the framework as a transparent, additive index. Each dimension contributes a sub-index scored on 0–50; their sum is the AIPDI on 0–100, with higher values denoting greater dependency. Formally, the technical sub-index is T = 50 · Σᵢ wᵢ tᵢ and the commercial sub-index is C = 50 · Σⱼ vⱼ cⱼ, where each indicator tᵢ, cⱼ is rated on a normalized 0–1 scale against published anchors and the weights wᵢ, vⱼ each sum to one. The composite is AIPDI = T + C. The index is paired with two provider-side measures: the market-level Herfindahl–Hirschman Index (HHI), and a firm-level single-supplier share S, the fraction of a product’s model calls routed to its largest provider, which captures concentration that an aggregate score can mask. Table II sets out the indicators and the weights we propose; we stress that the weights are a starting point requiring empirical calibration (Section VIII). Section III-F states the index formally and gives it a reliability interpretation.
+>
+> Table II. Proposed AIPDI scoring rubric. Each indicator is rated 0–1 against published anchors; weights within each sub-index sum to one and scale to a 0–50 contribution. Weights are author-proposed and await empirical calibration.
+>
+> The technical and operational sub-index deliberately mirrors the criteria by which financial regulators designate critical third parties under the EU Digital Operational Resilience Act: the systemic impact of a provider’s failure, the importance of the entities relying on it, the degree and concentration of that reliance, and the substitutability of the provider [19]. Our single-provider-concentration, availability and SLA-criticality, and open-weight-fallback indicators operationalize concentration and substitutability at the level of an individual product, making the AIPDI a firm-level counterpart to a regime that today operates only at the sector level.
+
+### Section IX as it stood before condensation (verbatim)
+
+> IX. Conclusion
+>
+> The generative-AI application economy is being built atop a small, highly concentrated set of model providers. We have argued that the resulting dependency is neither uniform nor binary but a measurable spectrum spanning two correlated dimensions, technical and operational and commercial and strategic, and we have offered the AIPDI, grounded in the lock-in, switching-cost, concentration and operational-resilience literatures, as a transparent way to score it. Applied across AI-native applications, embedding incumbents and infrastructure, the framework shows that the existential danger zone is narrow and specific, that mitigation relocates rather than abolishes dependency, and that firm-level diversification has done little to reduce the sector’s collective reliance on a few firms. Documented incidents confirm the risk is live. For builders, the path out of dependency runs through model-agnostic architecture and, decisively, through moats the model cannot supply; for enterprises, through governing providers as critical third parties; and for policymakers, through portability standards and resilience oversight modelled on regimes already applied to cloud. Measuring dependency is the first step toward managing it.
+
 <!-- Subsequent trims are appended below, newest last. -->
