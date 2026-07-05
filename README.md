@@ -157,6 +157,13 @@ the submission manuscript to meet the journal's 15-page limit:
   cases (Jasper 2022, Windsurf pre-cutoff 2025, Harvey pre and post its
   May 2025 multi-model move), with per-indicator sources, weight-uncertainty
   intervals, and a scoreability comparison against adjacent frameworks.
+- [`supplement/case_scores_extended.md`](supplement/case_scores_extended.md)
+  and [`supplement/case_scores_extended.csv`](supplement/case_scores_extended.csv):
+  compact public-evidence coding sheets for ten further catalogue firms,
+  with the first empirical validation of the Table V rule bands (M band 55
+  vs evidence mean 53.8; O band 45 vs 38.7; S band overstated where
+  disclosure reveals partial mitigations) and the finding that residual
+  sector dependency is commercial rather than technical.
 - [`supplement/figures/`](supplement/figures/): full-color originals of the
   paper's Figs. 1-8 (IEEE prints in grayscale) with their captions
   ([`figures.md`](supplement/figures/figures.md)) and machine-readable CSVs

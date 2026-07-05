@@ -149,7 +149,7 @@ and flagged [inferred, weak]; they inform a band, not a point.
 | sla_criticality | 0.7 | Agent workloads run largely on third-party frontier models; autocomplete runs on own models |
 | ai_share_of_value | 0.95 | The product is AI coding |
 | weak_moat | 0.5 | Scale ($1B+ annualized revenue, 1M+ paying users) and UX, against model-is-the-draw dynamics |
-| margin_exposure | 0.85 | Documented: June 2025 repricing attributed by the firm to model-cost increases; third-party estimates of very high inference share of revenue [inferred, weak; band 0.7-0.95] |
+| margin_exposure | 0.85 | Documented: June 2025 repricing attributed by the firm to model-cost increases; commentary relays reporting that most or all revenue passes through to the primary provider (independent verification 2026-07-05: partially corroborated, qualitative only, no audited figures; a separate claim tying bills to Anthropic priority tiers was NOT corroborated and is not used) [band 0.7-0.95] |
 | sherlocking_exposure | 0.85 | Claude Code, OpenAI Codex, GitHub Copilot, Devin compete directly |
 | contractual_lockin | 0.4 | OpenAI Startup Fund on the cap table; large committed provider spend reported |
 
