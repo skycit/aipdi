@@ -132,3 +132,46 @@ Ordered by typical return on effort:
 
 Then re-score. The delta between your current and post-mitigation AIPDI is
 a concrete, board-ready risk-reduction number.
+
+## Worked comparison: two businesses, one question
+
+Business A ships ten features; four run purely on a single provider's API,
+direct SDK, no tested fallback, and those features drive growth. Business B
+ships ten features; two run on a model it owns and serves itself. A is
+currently more profitable.
+
+Scoring both with this package (indicator values in the repository's test
+fixtures spirit; adjust to your evidence):
+
+| | T (0-50) | C (0-50) | AIPDI additive | AIPDI geometric |
+|---|---|---|---|---|
+| Business A (4 of 10 features on one provider) | 33 | 24 | 58 (elevated) | 100 |
+| Business B (own model, 2 of 10 features) | 8 | 14 | 22 (resilient) | 23 |
+
+Three readings matter:
+
+1. The additive scores say A carries roughly two and a half times B's
+   dependency, sitting in the elevated band where one provider decision
+   (price, deprecation, a competing first-party feature, an access cutoff)
+   materially moves the business.
+2. The geometric (weakest-link) score for A saturates at 100 because one
+   indicator is at its maximum: every AI call crosses one provider with no
+   fallback. Averages hide single points of failure; the weakest-link
+   variant refuses to.
+3. Profitability and dependency are different axes. A earns more today,
+   and expected-loss thinking (equation (10) of the paper) says exactly
+   that: the impact term scales with the revenue at risk, so higher profit
+   on a dependent critical path means MORE absolute exposure, not less.
+   The pair (profit, AIPDI) reads like (income, credit risk): A is the
+   higher-yield, higher-fragility asset; B's earnings are smaller but
+   survive provider shocks.
+
+What the score deliberately does not tell you: whether B's in-house model
+will stay competitive with frontier APIs, and what it costs B to keep it
+so. That is execution and upstream risk, not provider dependency; assess
+it separately. AIPDI answers one question precisely: whose revenue is
+exposed to someone else's decisions.
+
+For a multi-product portfolio, score each product separately and aggregate
+weighted by revenue share; a single blended score hides which product
+carries the exposure.
