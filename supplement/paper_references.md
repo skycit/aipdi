@@ -144,11 +144,11 @@ uses an older numbering; see the note in table_V_full_catalogue.md.
 
 [68] TechCrunch, “OpenAI blames its massive ChatGPT outage on a new telemetry service,” 2024. [Online]. Available: https://techcrunch.com/2024/12/13/openai-blames-its-massive-chatgpt-outage-on-a-new-telemetry-service/
 
-[69] OpenAI, “Elevated error rates for APIs, ChatGPT and Sora: incident report, June 10, 2025,” OpenAI status page, 2025. [Online]. Available: https://status.openai.com/incidents/01JXCAW3K3JAE0EP56AEZ7CBG3https://techcrunch.com/2024/12/13/openai-blames-its-massive-chatgpt-outage-on-a-new-telemetry-service/
+[69] OpenAI, “Elevated error rates for APIs, ChatGPT and Sora: incident report, June 10, 2025,” OpenAI status page, 2025. [Online]. Available: https://status.openai.com/incidents/01JXCAW3K3JAE0EP56AEZ7CBG3
 
-[70] Google Cloud, “Multiple GCP products are experiencing service issues: incident report, June 12, 2025,” Google Cloud Service Health, 2025. [Online]. Available: https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsWhttps://techcrunch.com/2024/12/13/openai-blames-its-massive-chatgpt-outage-on-a-new-telemetry-service/
+[70] Google Cloud, “Multiple GCP products are experiencing service issues: incident report, June 12, 2025,” Google Cloud Service Health, 2025. [Online]. Available: https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW
 
-[71] Cloudflare, “Cloudflare service outage June 12, 2025,” Cloudflare blog, 2025. [Online]. Available: https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/https://techcrunch.com/2024/12/13/openai-blames-its-massive-chatgpt-outage-on-a-new-telemetry-service/
+[71] Cloudflare, “Cloudflare service outage June 12, 2025,” Cloudflare blog, 2025. [Online]. Available: https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
 
-[72] Anthropic, “A postmortem of three recent issues,” Anthropic engineering blog, 2025. [Online]. Available: https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issueshttps://techcrunch.com/2024/12/13/openai-blames-its-massive-chatgpt-outage-on-a-new-telemetry-service/
+[72] Anthropic, “A postmortem of three recent issues,” Anthropic engineering blog, 2025. [Online]. Available: https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
 
