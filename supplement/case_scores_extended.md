@@ -43,10 +43,11 @@ weight uncertainty (concentration 60).
    posture, slightly conservative for O, and overstated only in the S
    corner, where the band is calibrated to the undisclosed thin-wrapper
    worst case while every disclosed S firm shows partial mitigations.
-2. The sector's residual dependency is commercial. In 11 of 13 current
+2. The sector's residual dependency is commercial. In 12 of 13 current
    configurations the commercial sub-index exceeds the technical one,
    often by a wide margin (Perplexity 33.6 vs 12.4; Character.AI 35.3 vs
-   8.3). Firms have engineered down technical dependency (routing, own
+   8.3); the single exception, Khanmigo, is technically tilted by 0.2
+   points. Firms have engineered down technical dependency (routing, own
    models, open weights) faster than they have escaped commercial exposure
    (AI share of value, provider first-party competition, margin
    pass-through, entangled cap tables). Diversification relocates
