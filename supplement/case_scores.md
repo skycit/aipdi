@@ -1,9 +1,9 @@
-# Public-evidence case scores: Jasper, Windsurf, and Harvey
+# Public-evidence case scores: Jasper, Windsurf, Harvey, and Cursor
 
 Supplementary material for the paper "AI-Dependent or AI-Enabled? A
 Reliability-Oriented Index for Measuring Downstream Reliance on
 Foundation-Model Providers" (IEEE Transactions on Reliability, under
-review). This file contains indicator-level coding sheets for three named
+review). This file contains indicator-level coding sheets for four named
 firms whose provider-dependency configurations and outcomes are unusually
 well documented in public sources, scored on the paper's Table II anchors.
 
@@ -31,6 +31,7 @@ Status and honesty notes:
 | Windsurf, pre-cutoff (May 2025) | 26.3 | 37.6 | 63.9 | 71.5 | 61-67 | Provider withdrew first-party capacity with <5 days notice (Jun 2025) |
 | Harvey, pre (OpenAI-only, early 2025) | 36.1 | 27.1 | 63.2 | 69.4 | 61-66 | (configuration replaced by choice, below) |
 | Harvey, post (multi-model, from May 2025) | 22.9 | 25.5 | 48.5 | 53.0 | 46-51 | Absorbed the mid-2025 provider turbulence |
+| Cursor, early 2026 | 18.2 | 37.5 | 55.7 | 68.1 | 53-59 | Provider price re-card transmitted to its own pricing (Jun 2025); diversification relocated dependency to the commercial axis |
 
 Two structural observations:
 
@@ -122,6 +123,55 @@ TechCrunch, 2025-05-13
 | margin_exposure | 0.5 | 0.5 | Segment-typical (flagged) |
 | sherlocking_exposure | 0.4 | 0.35 | Deep vertical workflow less absorbable by providers |
 | contractual_lockin | 0.5 | 0.4 | Investor relationship with its primary provider (OpenAI Startup Fund) |
+
+## Coding sheet: Cursor (Anysphere), early 2026 configuration
+
+Segment: AI-native application (agentic coding IDE). Sources: Cursor,
+"Clarifying our pricing," June 2025 postmortem attributing the repricing to
+model-cost increases (https://cursor.com/blog/june-2025-pricing);
+TechCrunch, 2025-07-07, apology and refunds
+(https://techcrunch.com/2025/07/07/cursor-apologizes-for-unclear-pricing-changes-that-upset-users/);
+Composer in-house model launch with Cursor 2.0, 2025-10-29 (firm blog and
+press); TechCrunch, 2025-06-05, $500M ARR and $9.9B valuation
+(https://techcrunch.com/2025/06/05/cursors-anysphere-nabs-9-9b-valuation-soars-past-500m-arr/);
+OpenAI Startup Fund seed participation (2023, widely documented).
+Third-party estimates of inference spend and gross margin are secondary
+and flagged [inferred, weak]; they inform a band, not a point.
+
+| Indicator | Score | Evidence |
+|---|---|---|
+| single_provider_concentration | 0.55 | Multi-model (Claude, GPT, Kimi) plus own Composer and Fusion models; demand and spend reportedly concentrate on Anthropic models |
+| no_abstraction_layer | 0.2 | In-house routing across providers and own models |
+| prompt_tool_nonportability | 0.4 | Agent harness tuned per model family; strong cross-model evaluation infrastructure |
+| finetuning_lockin | 0.1 | Own models trained in-house; no provider-hosted fine-tunes disclosed |
+| data_embeddings_lockin | 0.2 | In-house codebase semantic search and retrieval |
+| no_open_weight_fallback | 0.3 | Composer and Fusion in production are a real in-house standby |
+| sla_criticality | 0.7 | Agent workloads run largely on third-party frontier models; autocomplete runs on own models |
+| ai_share_of_value | 0.95 | The product is AI coding |
+| weak_moat | 0.5 | Scale ($1B+ annualized revenue, 1M+ paying users) and UX, against model-is-the-draw dynamics |
+| margin_exposure | 0.85 | Documented: June 2025 repricing attributed by the firm to model-cost increases; third-party estimates of very high inference share of revenue [inferred, weak; band 0.7-0.95] |
+| sherlocking_exposure | 0.85 | Claude Code, OpenAI Codex, GitHub Copilot, Devin compete directly |
+| contractual_lockin | 0.4 | OpenAI Startup Fund on the cap table; large committed provider spend reported |
+
+Result: T = 18.2, C = 37.5, AIPDI = 55.7 (53 to 59 under weight
+uncertainty), geometric 68.1. Reading: the lowest technical sub-index of
+the five configurations, achieved through aggressive diversification and
+in-house models, coexists with near-Windsurf commercial exposure. The June
+2025 pricing episode is a documented instance of a provider price re-card
+transmitted through a dependent firm to its own customers. Dependency was
+relocated, not removed.
+
+## Evidence updates after initial coding (2026-07-05)
+
+- Harvey: Anthropic launched a legal plugin in February 2026 (press),
+  a materialization of the Sherlocking channel after our scored window;
+  Harvey reached about $100M ARR by August 2025 and continued multi-model
+  expansion (Model Selector routing to Claude and Gemini). The pre and
+  post scores above are time-stamped to early and mid 2025 and unchanged.
+- Windsurf: first-party Claude access was restored under Cognition
+  ownership (July 2025); disclosed EU inference cluster in Frankfurt;
+  SWE-1 line continued (SWE-1.5, SWE-1.6). The pre-cutoff score above is
+  time-stamped to May 2025 and unchanged.
 
 ## Scoreability comparison: can adjacent frameworks score these firms?
 
