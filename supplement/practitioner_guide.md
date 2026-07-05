@@ -133,6 +133,27 @@ Ordered by typical return on effort:
 Then re-score. The delta between your current and post-mitigation AIPDI is
 a concrete, board-ready risk-reduction number.
 
+## Geopolitical exposure: adjust the probabilities, not the score
+
+The AIPDI measures your exposure structure; geopolitics changes how likely
+the disruptive events are. Two products with identical scores face
+different expected losses if one depends on a provider whose operations,
+data centres, or serving regions sit in an exposed jurisdiction, or whose
+government can impose export controls or order access restrictions. When
+you estimate expected loss (equation (10) of the paper), ask per provider:
+
+- Where are the data centres and serving regions that actually handle your
+  traffic, and how concentrated are they geographically?
+- Whose export-control and sanctions regime applies to the provider, and
+  could either your government or theirs restrict your access class?
+- Is the provider state-linked in a way that couples your access to
+  inter-state relations?
+
+Raise the event probabilities for withdrawal and outage accordingly. A
+mitigation that reduces the score also reduces the geopolitical exposure:
+a second provider only diversifies jurisdictional risk if it is domiciled
+and served from a different jurisdiction.
+
 ## Worked comparison: two businesses, one question
 
 Business A ships ten features; four run purely on a single provider's API,
