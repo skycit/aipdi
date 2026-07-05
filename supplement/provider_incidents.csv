@@ -1,0 +1,7 @@
+date,provider,event,documented_duration,severity,source
+2024-12-11,OpenAI,"Full outage of API, ChatGPT, Sora (telemetry deployment saturated Kubernetes control planes)","4 h 22 min",full outage,https://status.openai.com/incidents/01JMYB483C404VMPCW726E8MET
+2025-06-10,OpenAI,"Elevated error rates and latency across API, ChatGPT, Sora","10+ h",elevated errors,https://status.openai.com/incidents/01JXCAW3K3JAE0EP56AEZ7CBG3
+2025-06-12,Google Cloud,"Service Control crash; external API requests rejected globally; 50+ products incl. Vertex Gemini API","3 h main window",major degradation,https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW
+2025-06-12,Cloudflare,"Workers KV down (single-cloud backend hit by the GCP event); cascade to Access, WARP, dependent AI platforms","2 h 28 min",outage via common cause,https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
+2025-08-05,Anthropic,"Three overlapping infrastructure bugs silently degrading Claude output quality (to 2025-09-16)","weeks (partial); 16% of Sonnet 4 requests at worst hour",silent quality degradation,https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
+2025-09-10,Anthropic,"API, Console, Claude outages, restored within the day","brief, repeated that week",short outages,https://techcrunch.com/2025/09/10/anthropic-reports-outages-claude-and-console-impacted/

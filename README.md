@@ -145,6 +145,12 @@ the submission manuscript to meet the journal's 15-page limit:
   step-by-step self-assessment guide for startups and SMEs, from the
   substitution and withdrawal tests to a computed AIPDI score and a
   prioritized mitigation list.
+- [`supplement/provider_availability.md`](supplement/provider_availability.md)
+  and [`supplement/provider_incidents.csv`](supplement/provider_incidents.csv):
+  documented 2024-2025 provider incident inventory with primary sources, and
+  the empirical availability computation behind the paper's Section V-D
+  (single-provider vs multi-provider, reproduced with `availability_series`
+  and `availability_parallel`).
 - [`supplement/figures/`](supplement/figures/): full-color originals of the
   paper's Figs. 1-8 (IEEE prints in grayscale) with their captions
   ([`figures.md`](supplement/figures/figures.md)) and machine-readable CSVs
