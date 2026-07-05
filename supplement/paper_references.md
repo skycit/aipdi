@@ -64,7 +64,7 @@ uses an older numbering; see the note in table_V_full_catalogue.md.
 
 [28] HatchWorks, “AI wrapper product strategy,” 2024. [Online]. Available: https://hatchworks.com/blog/gen-ai/ai-wrapper-product-strategy/
 
-[29] Fortune, “Why AI founders fear being ‘Sherlocked’ by the platforms they build on,” 2026.
+[29] M. Rogers, “I worked with Steve Jobs at Apple, where every OS update killed startups. AI founders are about to face the same thing,” Fortune, 2026. [Online]. Available: https://fortune.com/2026/05/30/matt-rogers-nest-apple-sherlocking-ai-founders-hyperscalers/
 
 [30] D. Cutolo and M. Kenney, “Platform-dependent entrepreneurs: power asymmetries, risks, and strategies in the platform economy,” Academy of Management Perspectives, vol. 35, no. 4, pp. 584–605, 2021.
 
@@ -96,7 +96,7 @@ uses an older numbering; see the note in table_V_full_catalogue.md.
 
 [44] Stanford HAI, “The 2025 AI Index report,” Stanford Institute for Human-Centered AI, 2025. [Online]. Available: https://hai.stanford.edu/ai-index/2025-ai-index-report
 
-[45] Inc., “The AI models that top startups are suddenly choosing over ChatGPT,” 2025. [Online]. Available: https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830
+[45] B. Sherry, “The AI models that top startups are suddenly choosing over ChatGPT,” Inc., 2025. [Online]. Available: https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830
 
 [46] Andreessen Horowitz, “How 100 enterprise CIOs are building and buying generative AI in 2025,” 2025. [Online]. Available: https://a16z.com/ai-enterprise-2025/
 
@@ -104,7 +104,7 @@ uses an older numbering; see the note in table_V_full_catalogue.md.
 
 [48] Wellows, “85 hottest AI startups to watch in 2026,” 2026. [Online]. Available: https://wellows.com/blog/ai-startups/
 
-[49] Bloomberg, “24 AI startups to watch in 2026,” Bloomberg Technology, 2025.
+[49] Bloomberg, “24 AI startups to watch in 2026,” Bloomberg Technology, 2025. [Online]. Available: https://www.bloomberg.com/features/2025-top-ai-startups/
 
 [50] Typedef, “The state of LLM adoption,” 2025. [Online]. Available: https://www.typedef.ai/resources/llm-adoption-statistics
 
