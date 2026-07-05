@@ -193,4 +193,18 @@ table content was removed in this round.
 >
 > At the system level, the combination of natural-oligopoly economics, a high HHI, and pervasive downstream deployment is the signature of a concentration risk worth monitoring. The DORA precedent [19] offers a concrete template: designation of systemically important model providers, mandatory incident reporting, and, most consequentially for contestability, interoperability and portability standards for prompts and embeddings that would lower switching costs and reduce lock-in at its technical root. Such measures would address the dependency this paper measures without presuming to slow the underlying technology.
 
+## 2026-07-05: 15-page trim, round two (archetype figures; Appendix compression)
+
+Two further illustrative figures were relocated to the supplement (color
+originals and captions already in [figures/](figures/) as
+fig4_matrix.png and fig5_aipdi_segments.png, captions quoted in
+figures.md): the two-axis archetype plane (submission Fig. 3, preprint
+Fig. 4) and the illustrative segment bands (submission Fig. 4, preprint
+Fig. 5). Their content is carried in the submission by Table III (bands)
+and by the measured case chart (now Fig. 4 of the submission; preprint
+Fig. 9). The Appendix coding-notes paragraph was compressed to posture
+codes, dagger rule, and the repository pointer; the full legend remains
+verbatim in [table_V_full_catalogue.md](table_V_full_catalogue.md).
+Reference-list font reduced to 8 pt; equation images reduced 12 percent.
+
 <!-- Subsequent trims are appended below, newest last. -->
