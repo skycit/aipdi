@@ -96,7 +96,7 @@ uses an older numbering; see the note in table_V_full_catalogue.md.
 
 [44] Stanford HAI, “The 2025 AI Index report,” Stanford Institute for Human-Centered AI, 2025. [Online]. Available: https://hai.stanford.edu/ai-index/2025-ai-index-report
 
-[45] B. Sherry, “The AI models that top startups are suddenly choosing over ChatGPT,” Inc., 2025. [Online]. Available: https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830
+[45] B. Sherry, “The AI models that top startups are suddenly choosing over ChatGPT,” Inc., 2025. [Online]. Available: https://www.inc.com/ben-sherry/the-ai-models-that-top-startups-are-suddenly-choosing-over-chatgpt/91281830
 
 [46] Andreessen Horowitz, “How 100 enterprise CIOs are building and buying generative AI in 2025,” 2025. [Online]. Available: https://a16z.com/ai-enterprise-2025/
 
