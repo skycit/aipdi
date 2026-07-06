@@ -250,4 +250,20 @@ cited in the condensed text.
 >
 > The generative-AI application economy is being built atop a small, highly concentrated set of model providers. We have argued that the resulting dependency is neither uniform nor binary but a measurable spectrum spanning two correlated dimensions, technical and operational and commercial and strategic, and we have offered the AIPDI, grounded in the lock-in, switching-cost, concentration and operational-resilience literatures, as a transparent way to score it. Applied across AI-native applications, embedding incumbents and infrastructure, the framework shows that the existential danger zone is narrow and specific, that mitigation relocates rather than abolishes dependency, and that firm-level diversification has done little to reduce the sector’s collective reliance on a few firms. Documented incidents confirm the risk is live. For builders, the path out of dependency runs through model-agnostic architecture and, decisively, through moats the model cannot supply; for enterprises, through governing providers as critical third parties; and for policymakers, through portability standards and resilience oversight modelled on regimes already applied to cloud. Measuring dependency is the first step toward managing it.
 
+## 2026-07-06: Declarations removed; availability statement shortened
+
+The CRediT, competing-interest, and funding declarations (Elsevier-style
+conventions, not IEEE ones) were removed from the submission copy, and the
+Code and data availability statement was shortened to a single sentence;
+the repository README carries the full description. Removed or replaced
+text, verbatim:
+
+> CRediT author statement. Mohammadamin Keshtkar: Conceptualization, Methodology, Software, Formal analysis, Data curation, Validation, Writing – original draft, Writing – review & editing.
+>
+> Declaration of competing interest. The authors declare no competing financial or personal interests.
+>
+> Funding. This research received no specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+>
+> Code and data availability. The complete named-entity catalogue (all 398 entities, machine-readable) and an open-source Python implementation of the AIPDI are released at https://github.com/skycit/aipdi (to be archived at Zenodo with a DOI upon acceptance). The repository reproduces every score, figure, and sensitivity result in this paper: it contains the normalization, sub-index, and aggregation functions of Section III-F (additive and geometric variants), the alternative weighting schemes and the variance-based Sobol’ sensitivity routine of Section IV-C, the firm catalogue as catalogue.csv, and a worked example. The repository’s supplement folder preserves the paper’s supplementary material, including the complete Table V coding sheet (all 398 entities with the Indic. AIPDI column), full-color versions of all figures, including the value-chain, funding, and sample-composition charts relocated from this manuscript for space, with the machine-readable data underlying the data-bearing figures, a practitioner self-assessment guide, a structured comparison of adjacent dependency instruments, and any material condensed from this manuscript to meet the page limit.
+
 <!-- Subsequent trims are appended below, newest last. -->
