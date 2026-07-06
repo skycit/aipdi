@@ -16,7 +16,7 @@ Bracketed citations anywhere in this folder resolve against
 
 | File | What it is |
 |---|---|
-| [paper_references.md](paper_references.md) | The submission's complete numbered reference list (72 entries); resolves all [n] citations in this folder |
+| [paper_references.md](paper_references.md) | The submission's complete numbered reference list (74 entries, LaTeX submission numbering); resolves all [n] citations in this folder |
 | [table_V_full_catalogue.md](table_V_full_catalogue.md) / [.csv](table_V_full_catalogue.csv) | The full 398-entity catalogue with the computed Indic. AIPDI column, dagger flags, caption, and legend |
 | [case_scores.md](case_scores.md) / [.csv](case_scores.csv) | Flagship indicator-level coding sheets: Jasper 2022, Windsurf pre-cutoff, Harvey pre and post, Cursor, with per-indicator evidence and sources |
 | [case_scores_extended.md](case_scores_extended.md) / [.csv](case_scores_extended.csv) | Thirteen further public-evidence case scores; empirical validation of the rule bands; the commercial-residual finding |
