@@ -201,6 +201,28 @@ def unavailability_parallel(provider_availabilities: Sequence[float]) -> float:
     return float(np.prod(1.0 - a))
 
 
+
+def availability_parallel_beta(availabilities, beta):
+    """Beta-factor common-cause extension of eq. (7): eq. (8) of the paper.
+
+    U_eff = beta * U_p + (1 - beta) * prod_j U_j, where beta in [0, 1] is
+    the fraction of provider unavailability attributable to common causes
+    and U_p is the (mean) single-provider unavailability. Returns the
+    effective availability 1 - U_eff. With beta = 0 this reduces to
+    availability_parallel; with beta = 1 redundancy provides no benefit.
+    """
+    a = [float(x) for x in availabilities]
+    if not a:
+        raise ValueError("availabilities must be non-empty")
+    if not 0.0 <= float(beta) <= 1.0:
+        raise ValueError("beta must be in [0, 1]")
+    u_single = sum(1.0 - x for x in a) / len(a)
+    u_indep = 1.0
+    for x in a:
+        u_indep *= (1.0 - x)
+    u_eff = float(beta) * u_single + (1.0 - float(beta)) * u_indep
+    return 1.0 - u_eff
+
 def availability_parallel(provider_availabilities: Sequence[float]) -> float:
     """Equation (7): A_par = 1 - prod_j (1 - A_j) for k redundant providers."""
     return 1.0 - unavailability_parallel(provider_availabilities)

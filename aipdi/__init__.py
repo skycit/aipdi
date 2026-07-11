@@ -8,7 +8,8 @@ Public API
 Scoring (Section III-F equations):
     normalize, technical_subindex, commercial_subindex, aipdi,
     aipdi_geometric, survivability, single_supplier_share, hhi,
-    availability_series, availability_parallel, unavailability_parallel,
+    availability_series, availability_parallel,
+    availability_parallel_beta, unavailability_parallel,
     expected_loss
 Weighting (Section IV-C):
     DEFAULT_WEIGHTS, TECHNICAL_INDICATORS, COMMERCIAL_INDICATORS,

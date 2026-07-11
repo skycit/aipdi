@@ -117,6 +117,16 @@ def test_indicative_band_and_catalogue():
     assert {r["segment"] for r in rows} == {"Provider", "Infrastructure", "AI-native", "Incumbent"}
 
 
+
+
+def test_availability_parallel_beta():
+    from aipdi.scoring import availability_parallel, availability_parallel_beta
+    a = [0.99718, 0.99718]
+    assert abs(availability_parallel_beta(a, 0.0) - availability_parallel(a)) < 1e-12
+    assert abs(availability_parallel_beta(a, 1.0) - 0.99718) < 1e-9
+    mid = availability_parallel_beta(a, 0.3)
+    assert availability_parallel(a) > mid > 0.99718
+
 if __name__ == "__main__":
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     passed = 0

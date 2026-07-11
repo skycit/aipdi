@@ -1,0 +1,19 @@
+configuration,flagged_indicators,flagged_count,observed_count
+Jasper (2022 config),data_embeddings_lockin;margin_exposure,2,10
+"Windsurf (pre-cutoff, May 2025)",margin_exposure,1,11
+"Harvey (pre, OpenAI-only)",data_embeddings_lockin;margin_exposure,2,10
+"Harvey (post, multi-model)",data_embeddings_lockin;margin_exposure,2,10
+Cursor (early 2026),margin_exposure,1,11
+Perplexity,margin_exposure,1,11
+Cognition (Devin),margin_exposure,1,11
+Sierra,finetuning_lockin;margin_exposure,2,10
+Lovable,finetuning_lockin;sherlocking_exposure,2,10
+Clay,margin_exposure,1,11
+Rogo,margin_exposure;no_open_weight_fallback,2,10
+Khan Academy (Khanmigo),finetuning_lockin;data_embeddings_lockin,2,10
+Writer,margin_exposure,1,11
+Suno,margin_exposure,1,11
+Character.AI,data_embeddings_lockin,1,11
+Gamma,finetuning_lockin;data_embeddings_lockin,2,10
+Legora,finetuning_lockin;data_embeddings_lockin;margin_exposure,3,9
+Decagon,margin_exposure,1,11

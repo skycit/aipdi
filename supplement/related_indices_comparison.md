@@ -28,6 +28,30 @@ reproducible composite score with a reliability interpretation.
 | NIST AI RMF and GAI Profile | Third-party AI risk governance | Organizations | Governance | Qualitative controls | Governance checklists, no composite dependency metric |
 | UK CMA AI Foundation Models study (2023-2024) | Competition risks in the FM market | Market | Regulatory | Qualitative principles | Market-level competition analysis, no firm-level score |
 
+
+## Prior-art search protocol (novelty-claim basis)
+
+The comparison above and the paper's "to our knowledge, the first" claim
+rest on the following auditable search basis:
+
+- Databases and sources: arXiv, SSRN, RePEc, IEEE Xplore and ACM (via web
+  search), Google Scholar, regulatory instruments (DORA, EU AI Act, NIST
+  AI RMF and 600-1, UK CMA foundation-models study), consulting and
+  industry frameworks (Gartner, Forrester, Corinium, vendor guides), and
+  two independent LLM-assisted sweeps with citation-verified outputs.
+- Search strings (representative): "AI dependency index", "foundation
+  model dependency", "LLM provider lock-in metric", "downstream AI
+  vulnerability", "AI vendor concentration score", "provider dependency
+  measurement", combined with reliability, composite indicator, and
+  supply-chain variants.
+- Window: literature to July 2026; a re-sweep on 5 July 2026 confirmed
+  the gap still holds (AIIVI v2 of 24 March 2026 explicitly leaves
+  downstream dependency open).
+- Inclusion criterion: any published instrument producing a reproducible,
+  firm- or product-level score of downstream dependency on foundation-model
+  providers would defeat the claim; the fourteen nearest instruments are
+  catalogued above with the reasons none qualifies.
+
 ## Sources
 
 - Pirrone, Fricano, and Fazio, AI Industrial Vulnerability Index: https://arxiv.org/abs/2510.23421

@@ -95,3 +95,11 @@ firm-level measurements. Headline concentration numbers used across the
 paper: HHI of roughly 2,914 and a top-3 provider share of roughly 88
 percent, both computable from fig2_concentration.csv with
 `aipdi.scoring.hhi` and `aipdi.scoring.single_supplier_share`.
+
+Update (2026-07-11, review-driven): grayscale-safe corrected versions
+added for the submission: fig2_concentration_v2_grayscale.png (HHI shown
+as the 2,770-2,914 interval with the 2023 Merger Guidelines 1,800
+threshold) and fig8_rbd_v2_grayscale.png (larger labels, shared-
+infrastructure caveat). The submission renumbers figures and tables
+sequentially and renames the excerpt table's "Indic. AIPDI" column to
+"Rule band"; supplement files keep their historical names.

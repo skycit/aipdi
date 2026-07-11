@@ -79,9 +79,10 @@ python tests/test_scoring.py   # no pytest needed
 | `single_supplier_share(shares)`, `hhi(shares)` | (5) | concentration measures |
 | `availability_series(a)` | (6) | single provider = single point of failure |
 | `availability_parallel(a)`, `unavailability_parallel(a)` | (7) | multi-provider redundancy |
-| `survivability(scores)` | (8) | R = prod_i (1 - n_i)^w_i, weakest-link |
-| `aipdi_geometric(scores)` | (9) | partially non-compensatory composite |
-| `expected_loss(p, impact)` | (10) | L = sum_k p_k I_k, business-continuity estimate |
+| `availability_parallel_beta(a, beta)` | (8) | beta-factor common-cause extension |
+| `survivability(scores)` | (9) | R = prod_i (1 - n_i)^w_i, weakest-link |
+| `aipdi_geometric(scores)` | (10) | partially non-compensatory composite |
+| `expected_loss(p, impact)` | (11) | L = sum_k p_k I_k, business-continuity estimate |
 
 All scores are bounded to [0, 100] (sub-indices to [0, 50]); `survivability`
 returns [0, 1].

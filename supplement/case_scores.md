@@ -14,8 +14,7 @@ Status and honesty notes:
   indicator is set at its segment-typical value and flagged, following the
   paper's Section IV-C protocol. They are not audited internal
   measurements.
-- Coding status: coder 1 complete; second-coder review in progress
-  (author). Scores are reported with the 5th to 95th percentile interval
+- Per-configuration evidence coverage (flagged versus observed indicators) is in [evidence_coverage.csv](evidence_coverage.csv); scoring anchors are frozen as [codebook.md](codebook.md) v1.0. Coding status: coder 1 complete; second-coder review in progress (author); quadratic-weighted kappa and ICC statistics (tools/interrater.py) will be published here once the independent second coding is complete. Scores are reported with the 5th to 95th percentile interval
   under Dirichlet weight uncertainty (concentration 60) from
   `aipdi.sensitivity.dirichlet_uncertainty`.
 - Naming precedent: the Foundation Model Transparency Index scores named
